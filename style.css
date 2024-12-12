@@ -1,0 +1,710 @@
+@font-face {
+    font-family: popBold;
+    src: url("fonts/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: popins;
+    src: url("fonts/POPPINS-REGULAR.TTF");
+}
+@font-face {
+    font-family: popLight;
+    src: url("fonts/Poppins-ExtraLight.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: popins;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.cursor{                                  /*Cursor Code*/
+    height: 13px;
+    width: 13px;
+    position: fixed;
+    z-index: 99;
+    background-color: black;
+    border-radius: 50vw;
+    pointer-events: none;
+}
+::-webkit-scrollbar{                      /*Scrollbar's Code*/
+    width: 0.4vw;
+    background-color: #EEEEEE;
+}
+::-webkit-scrollbar-thumb{                /*scrollbar Thumb's Code*/
+    /* height: 0vw; */
+    background-color: #BBBBBB;
+}
+.WrapperDiv{                              /*wrapperDiv's Code*/
+    position: relative;
+    overflow: hidden;
+}
+.WrapperDiv .colorNavigation{                  /*Navigation's Bottom Gradient Code*/
+    position: fixed;
+    z-index: 8;
+    /* display: none; */
+}
+.colorNavigation .bottomGradient{
+    position: fixed;
+    z-index: 9;
+    top: 0.5vw;
+}
+.bottomGradient>#gradient{
+    height: 105px;
+    width: 100vw;
+}
+.colorNavigation .navigation{                  /*Navigation Code*/
+    width: 100vw;
+    padding: 1.4vw 12.9vw;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+}
+.navigation .navigationDetails{
+    position: relative;
+}
+.navigation .upperDetails{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.upperDetails>#img{
+    width: 123px;
+}
+.upperDetails .rightDetails{
+    position: relative;
+    right: 2.5vw;
+    white-space: nowrap;
+}
+.upperDetails i{
+    display: none;
+}
+.rightDetails span{
+    font-size: 0.8vw;
+    font-weight: 800;
+    padding: 0.2vw 0.2vw;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin: 0vw 1vw;
+    position: relative;
+    cursor: pointer;
+}
+span::before{
+    content: "";
+    height: 12%;
+    width: 0%;
+    border-radius: 50vw;
+    position: absolute;
+    top: 1.4vw;
+    left: 0%;
+    background-color: black;
+    transition: all 0.2s linear;
+}
+span:hover::before{
+    width: 100%;
+}
+.WrapperDiv .page1{                  /*Page 1's Code*/
+    /* min-height: 100vh; */
+    width: 100vw;
+    background-color: white;
+    position: relative;
+}
+.page1 .heroSectionDetails{
+    position: relative;
+    /* background-color: red; */
+    z-index: 5;
+    top: 13vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15vw;
+}
+.heroSectionDetails h1{
+    font-family: popLight;
+    font-size: 4vw;
+    line-height: 4vw;
+    width: 28vw;
+    font-weight: 500;
+    margin-left: -2.6vw;
+}
+.heroSectionDetails .rightSideDetails{
+    position: relative;
+    top: 0.7vw;
+    right: -1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.rightSideDetails p{
+    font-size: 1vw;
+    width: 25vw;
+    letter-spacing: 0.1px;
+    line-height: 1.4vw;
+}
+.rightSideDetails>#certified{
+    width: 5.9vw;
+    margin: 1.8vw 3.2vw;
+}
+.page1 .backgroundIMG{
+    position: relative;
+    top: 1.8vw;
+}
+.backgroundIMG img{
+    width: 114.5vw;
+}
+.WrapperDiv .page2{                  /*Page 2's Code*/
+    /* height: 100vh; */
+    width: 100vw;
+    position: relative;
+    padding-top: 4.7vw;
+    display: flex;
+    align-items: flex-start;
+}
+.page2 .leftIMGContainer{
+    height: 32.7vw;
+    width: 50vw;
+    background-image: url("pictures/bg-wdata-01.jpg");
+    background-position: center;
+    background-size: 64.5vw;
+}
+.page2 .rightIMGContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.9vw;
+}
+.rightIMGContainer .textContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2vw;
+    padding: 2.2vw 4.8vw;
+}
+.textContainer .upperTextContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 9.3vw;
+}
+.upperTextContainer h5{
+    text-transform: uppercase;
+    font-size: 0.9vw;
+    letter-spacing: 1px;
+}
+.upperTextContainer img{
+    width: 14vw;
+}
+.textContainer h1{
+    font-family: popLight;
+    font-size: 4vw;
+    line-height: 4vw;
+    width: 18vw;
+    font-weight: 500;
+}
+.rightIMGContainer .bottomIMGContainer{
+    height: 19.6vw;
+    width: 50vw;
+    background-image: url("pictures/pattern-wdata-01.png");
+    background-position: top;
+    background-size: cover;
+    padding: 2.5vw 4.9vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.8vw;
+}
+.bottomIMGContainer p{
+    font-size: 0.9vw;
+    width: 27vw;
+    letter-spacing: 0.1px;
+    line-height: 1.5vw;
+}
+.bottomIMGContainer .button{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 0.8vw 2.2vw;
+    border-radius: 50vw;
+    cursor: pointer;
+}
+.button h6{
+    position: relative;
+    z-index: 1;
+    font-size: 0.7vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.button .shade{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    background-color: black;
+    border-radius: 50vw;
+    transition:  all 0.2s linear;
+}
+.button:hover{
+    .shade{
+        left: 0%;
+    }
+    h6{
+        position: relative;
+        z-index: 2;
+        color: white;
+    }
+}
+.WrapperDiv .page3{                  /*Page 3's Code*/
+    /* height: 100vh; */
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.page3 .leftContainer{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.9vw;
+}
+.leftContainer .topTextContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.9vw;
+    padding-top: 2.8vw;
+    padding-left: 15vw;
+}
+.topTextContainer h5{
+    text-transform: uppercase;
+    font-size: 0.9vw;
+    letter-spacing: 1px;
+}
+.topTextContainer h1{
+    font-family: popLight;
+    font-size: 4vw;
+    line-height: 4vw;
+    font-weight: 500;
+}
+.topTextContainer img{
+    width: 14vw;
+}
+.leftContainer .bottomLeftIMGContainer{
+    height: 26.5vw;
+    width: 52.8vw;
+    position: relative;
+    background-image: url("pictures/pattern-wchange-02.png");
+    background-position: center;
+    background-size: cover;
+}
+.bottomLeftIMGContainer .IMGContainer{
+    position: relative;
+    height: 100%;
+    width: 40vw;
+    background-image: url("pictures/pattern-wchange-01.png");
+    background-position: top left;
+    background-size: 54vw 29vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.8vw;
+    padding-left: 15vw;
+}
+.IMGContainer p{
+    font-size: 0.9vw;
+    width: 21vw;
+    letter-spacing: 0.1px;
+    line-height: 1.5vw;
+}
+.IMGContainer .button{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 0.8vw 2.2vw;
+    border-radius: 50vw;
+    cursor: pointer;
+}
+.page3 .rightIMGContainer{
+    height: 36vw;
+    width: 60vw;
+    position: relative;
+    margin-top: 14vw;
+    right: -40vw;
+    background-image: url("pictures/img-wchange-01.jpg");
+    background-size: 1020px;
+    background-position: 0px -25px;    /*Change 0px for animation */
+}
+.WrapperDiv .page4{                  /*Page 4's Code*/
+    width: 100vw;
+    position: relative;
+    padding: 3.6vw 0vw;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+.page4 .leftContainer{
+    position: relative;
+    left: 2vw;
+    bottom: -0.9vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.leftContainer .firstPara{
+    position: relative;
+}
+.firstPara h3{
+    font-size: 1.4vw;
+    font-weight: 500;
+    width: 33vw;
+    line-height: 2.2vw;    
+}
+.firstPara strong{
+    font-family: popBold;
+    font-weight: 600;
+}
+.leftContainer .secondPara{
+    position: relative;
+}
+.secondPara h5{
+    font-size: 0.9vw;
+    font-weight: 500;
+    line-height: 1.5vw;
+}
+.leftContainer>#Forbes{
+    width: 17vw;
+    margin-left: -0.5vw;
+}
+.page4 .rightContainer{
+    height: 35vw;
+    width: 37vw;
+    position: relative;
+    bottom: -1vw;
+    background-image: url("pictures/Green-wave.png");
+    background-size: 63.5vw 35.8vw;
+    background-position: center;
+}
+.WrapperDiv .page5{                  /*Page 5's Code*/
+    height: 37vw;
+    width: 100vw;
+    background-color: #F2F5F6;
+    position: relative;
+}
+.page5 h5{
+    font-family: popBold;
+    font-size: 0.9vw;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    position: relative;
+    left: 14.9vw;
+    top: 2.7vw;
+}
+.page5 .detailsSection{
+    position: relative;
+    top: 4.7vw;
+}
+.detailsSection .marqueeSection{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.marqueeSection .firstMarquee{
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    margin-bottom: 4vw;
+}
+.firstMarquee .marqueeStructure{
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+}
+.marqueeStructure img{
+    position: relative;
+    margin: 0vw 2.5vw;
+}
+.marqueeStructure>#img1{
+    top: 0.3vw;
+    width: 15.1vw;
+}
+.marqueeStructure>#img2{
+    width: 15vw;
+}
+.marqueeStructure>#img3{
+    width: 9vw;
+}
+.marqueeStructure>#img4{
+    top: 1.2vw;
+    width: 17.5vw;
+}
+.marqueeStructure>#img5{
+    top: 0.5vw;
+    width: 12vw;
+}
+.marqueeStructure>#img6{
+    top: 0.3vw;
+    width: 18vw;
+}
+.marqueeStructure>#img7{
+    top: 0vw;
+    width: 10vw;
+}
+.marqueeStructure>#img8{
+    top: -0.1vw;
+    width: 14.5vw;
+}
+.marqueeStructure>#img9{
+    top: -0.1vw;
+    width: 20vw;
+}
+@keyframes marquee{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.marqueeSection .secondMarquee{
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    margin-bottom: 4.4vw;
+}
+.secondMarquee .marqueeStructure2{
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    animation: marqueeReverse 20s linear infinite;
+}
+.marqueeStructure2 img{
+    position: relative;
+    margin: 0vw 2.5vw;
+}
+.marqueeStructure2>#img1{
+    top: -0.3vw;
+    width: 17.5vw;
+}
+.marqueeStructure2>#img2{
+    width: 13.5vw;
+}
+.marqueeStructure2>#img3{
+    width: 13vw;
+}
+.marqueeStructure2>#img4{
+    top: -0.8vw;
+    width: 9vw;
+}
+.marqueeStructure2>#img5{
+    top: -0.6vw;
+    width: 12vw;
+}
+.marqueeStructure2>#img6{
+    top: -0.5vw;
+    width: 6vw;
+}
+.marqueeStructure2>#img7{
+    top: -0.8vw;
+    width: 7vw;
+}
+.marqueeStructure2>#img8{
+    top: -0.8vw;
+    width: 3.5vw;
+}
+.marqueeStructure2>#img9{
+    top: -0.2vw;
+    width: 10.2vw;
+}
+@keyframes marqueeReverse{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}
+.detailsSection .centeredTextContainer{
+    height: 17vw;
+    width: 47vw;
+    position: relative;
+    z-index: 2;
+    left: 26.2vw;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+.centeredTextContainer .arrows{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 2.4vw;
+}
+.arrows>#arrowLeft{
+    width: 1.2vw;
+}
+.arrows>#arrowRight{
+    width: 1.2vw;
+}
+.centeredTextContainer p{
+    font-size: 1.1vw;
+    font-weight: 500;
+    width: 34vw;
+    line-height: 1.5vw;
+}
+.centeredTextContainer h4{
+    font-family: popBold;
+    font-size: 1.1vw;
+    width: 35vw;
+}
+.WrapperDiv .page6{                  /*Page 6's Code*/
+    width: 100vw;
+    background-color: aquamarine;
+}
+.page6 .upperSection{
+    height: 27.6vw;
+    width: 100vw;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+}
+.upperSection>#partnerBg{
+    position: relative;
+    top: -17.5vw;
+    left: 3vw;
+    width: 42vw;
+}
+.upperSection .centerDetails{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: -44vw;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15vw 15vw;
+}
+.centerDetails>#letsPartner{
+    width: 48vw;
+}
+.centerDetails .rightDetails{
+    position: relative;
+    top: -0.8vw;
+    left: -11.8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 4vw;
+}
+.rightDetails ul{
+    font-size: 0.9vw;
+}
+.rightDetails>#getInTouch{
+    position: relative;
+    right: -10.5vw;
+    overflow: hidden;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 0.8vw 2.2vw;
+    border-radius: 50vw;
+    cursor: pointer;
+}
+.page6 .footer{
+    height: 10.5vw;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .leftSideContainer{
+    position: relative;
+    left: -3.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+.leftSideContainer img{
+    width: 9vw;
+}
+.leftSideContainer .details{
+    position: relative;
+}
+.details span{
+    font-size: 0.7vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin: 0vw 1.2vw;
+    position: relative;
+    cursor: pointer;
+}
+.details span::before{
+    content: "";
+    height: 9.3%;
+    width: 0%;
+    border-radius: 50vw;
+    position: absolute;
+    top: 1.2vw;
+    left: 0%;
+    background-color: white;
+    transition: all 0.2s linear;
+}
+.details span:hover::before{
+    width: 100%;
+}
+.footer .rightSideContainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+}
+.rightSideContainer .leftDetails{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    gap: 0.6vw;
+}
+.leftDetails img{
+    width: 9vw;
+}
+.leftDetails p{
+    font-size: 0.5vw;
+    width: 12vw;
+}
+.rightSideContainer>img{
+    width: 3vw;
+}

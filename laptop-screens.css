@@ -1,0 +1,22 @@
+@media only screen and (min-width: 1111px) and (max-width: 1280px){
+    .colorNavigation .navigation {
+        padding: 2.4vw 12.9vw;
+    }
+    .page1 .heroSectionDetails {
+        top: 16vw;
+        gap: 10.5vw;
+    }
+    .rightSideDetails p {
+        font-size: 1.2vw;
+        width: 30vw;
+        line-height: 1.5vw;
+    }
+    .rightSideDetails>#certified {
+        width: 6.5vw;
+        margin: 1.8vw 3.2vw;
+    }
+    .page1 .backgroundIMG {
+        top: 8.8vw;
+        margin-bottom: 8vw;
+    }
+}
