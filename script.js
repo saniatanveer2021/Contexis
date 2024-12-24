@@ -164,7 +164,7 @@ function pageAnimations(){
     }
     else{
         gsap.to(".page3 .rightIMGContainer",{
-            backgroundPosition:"-126px 47vw",
+            backgroundPosition:"-126px 48.5vw",
             scrollTrigger:{
                 trigger:".page3 .rightIMGContainer",
                 scroller:"body",
