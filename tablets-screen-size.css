@@ -1,0 +1,382 @@
+@media only screen and (min-width: 767px) and (max-width: 1110px){
+    .cursor{
+        display: none;
+    }
+    .colorNavigation .bottomGradient {
+        top: 0.9vw;
+    }
+    .colorNavigation .navigation {
+        width: 100vw;
+        padding: 2.8vw 5.5vw;
+        position: fixed;
+        z-index: 10;
+    }
+    .upperDetails>#img {
+        width: 15vw;
+    }
+    .rightDetails span {
+        display: none;
+    }
+    .upperDetails i{
+        display: initial;
+        font-size: 4.7vw;
+    }
+
+    /* Page 1 */
+
+    .page1 .heroSectionDetails {
+        flex-direction: column;
+        top: 23.5vw;
+        left: 6.4vw;
+        gap: 5vw;
+    }
+    .heroSectionDetails h1 {
+        font-size: 7vw;
+        line-height: 7.2vw;
+        width: 43vw;
+        margin-left: 0vw;
+    }
+    .rightSideDetails p {
+        font-size: 2.2vw;
+        width: 86vw;
+        line-height: 3vw;
+    }
+    .rightSideDetails>#certified {
+        width: 13vw;
+        margin: 4vw 3.2vw;
+        position: relative;
+        right: 4vw;
+    }
+    .page1 .backgroundIMG {
+        top: 8.5vw;
+        margin-bottom: 2.5vw;
+    }
+    .backgroundIMG img{
+        width: 114.5vw;
+    }
+
+    /* Page 2 */
+    .WrapperDiv .page2 {
+        margin-top: 13vw;
+        flex-direction: column;
+    }
+    .page2 .leftIMGContainer {
+        height: 62.3vw;
+        width: 100vw;
+        background-position: 113.5vw 76vw;
+        background-size: 123.5vw;
+    }
+    .textContainer .upperTextContainer {
+        gap: 48.3vw;
+        white-space: nowrap;
+    }
+    .upperTextContainer h5 {
+        font-size: 1.7vw;
+        letter-spacing: 0.3px;
+    }
+    .upperTextContainer img {
+        width: 28vw;
+    }
+    .textContainer h1{
+        font-size: 7vw;
+        line-height: 7.2vw;
+        width: 31.5vw;
+    }
+    .rightIMGContainer .textContainer {
+        gap: 4vw;
+        padding: 5.5vw 6.4vw;
+    }
+    .rightIMGContainer .bottomIMGContainer {
+        height: 40vw;
+        width: 100vw;
+        padding: 5.5vw 6.4vw;
+        gap: 3.9vw;
+    }
+    .bottomIMGContainer p {
+        width: 61vw;
+        font-size: 2vw;
+        line-height: 3vw;
+        letter-spacing: 0.1px;
+    }
+
+    .bottomIMGContainer .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.9vw 5vw;
+    }
+    .button h6 {
+        font-size: 1.5vw;
+    }
+
+    /* Page 3 */
+    .WrapperDiv .page3{
+        margin-top: 4vw;
+    }
+    .leftContainer .topTextContainer {
+        gap: 4vw;
+        padding-left: 6.4vw;
+        margin-bottom: 5.5vw;
+    }
+    .topTextContainer h5{
+        font-size: 1.7vw;
+        letter-spacing: 0.3px;
+    }
+    .topTextContainer h1{
+        font-size: 7vw;
+        line-height: 7.2vw;
+        width: 60vw;
+    }
+    .topTextContainer img{
+        width: 28vw;
+    }
+    .leftContainer .bottomLeftIMGContainer {
+        height: 58.3vw;
+        width: 63vw;
+        background-size: 73vw 60vw;
+    }
+    .bottomLeftIMGContainer .IMGContainer{
+        width: 50vw;
+        background-position: top left;
+        background-size: 66vw 60vw;
+        padding-left: 6.4vw;
+        gap: 3.9vw
+    }
+    .IMGContainer p{
+        width: 37vw;
+        font-size: 2vw;
+        line-height: 3vw;
+        letter-spacing: 0.1px;
+    }
+    .IMGContainer .button{
+        padding: 1.9vw 5vw;
+    }
+    .page3 .rightIMGContainer {
+        height: 77vw;
+        width: 50vw;
+        margin-top: 22.8vw;
+        right: -50vw;
+        background-size: 1016px;
+        background-position: 0px 0px;
+    }
+
+    /* Page 4 */
+    .WrapperDiv .page4{
+        padding: 14.6vw 4vw;
+        justify-content: flex-start;
+        gap: 7vw;
+    }
+    .page4 .leftContainer {
+        gap: 3.3vw;
+    }
+    .firstPara h3 {
+        font-size: 3vw;
+        width: 84vw;
+        line-height: 4.1vw;
+    }
+    .secondPara h5 {
+        font-size: 2vw;
+        line-height: 2.7vw;
+    }
+    .leftContainer>#Forbes {
+        width: 30vw;
+    }
+    .page4 .rightContainer {
+        display: none;
+    }
+
+    /* Page 5 */
+
+    .WrapperDiv .page5 {
+        height: 52vw;
+    }
+    .page5 h5{
+        font-size: 1.7vw;
+        letter-spacing: 0.3px;
+        top: 6.5vw;
+        left: 6.4vw;
+        margin-bottom: 6vw;
+    }
+    .detailsSection .marqueeSection{
+        margin-bottom: 1vw;
+    }
+    .marqueeStructure img{
+        margin: 0vw 3.8vw;
+    }
+    .marqueeStructure>#img1 {
+        top: 0.3vw;
+        width: 24.1vw;
+    }
+    .marqueeStructure>#img2 {
+        top: -0.5vw;
+        width: 24.1vw;
+    }
+    .marqueeStructure>#img3 {
+        top: -0.9vw;
+        width: 14.1vw;
+    }
+    .marqueeStructure>#img4 {
+        top: 0vw;
+        width: 24.1vw;
+    }
+    .marqueeStructure>#img5 {
+        top: -0.9vw;
+        width: 16.1vw;
+    }
+    .marqueeStructure>#img6 {
+        top: -0.8vw;
+        width: 24.1vw;
+    }
+    .marqueeStructure>#img7 {
+        top: -1vw;
+        width: 14.1vw;
+    }
+    .marqueeStructure>#img8 {
+        top: -1vw;
+        width: 18.1vw;
+    }
+    .marqueeStructure>#img9 {
+        top: -0.9vw;
+        width: 24.1vw;
+    }
+    .marqueeStructure2 img{
+        margin: 0vw 3.8vw;
+    }
+    .marqueeStructure2>#img1 {
+        width: 25.5vw;
+    }
+    .marqueeStructure2>#img2 {
+        width: 20.5vw;
+    }
+    .marqueeStructure2>#img3 {
+        width: 20.5vw;
+    }
+    .marqueeStructure2>#img4 {
+        top: -0.6vw;
+        width: 16.5vw;
+    }
+    .marqueeStructure2>#img5 {
+        top: -0.3vw;
+        width: 19.5vw;
+    }
+    .marqueeStructure2>#img6 {
+        top: -0.6vw;
+        width: 9vw;
+    }
+    .marqueeStructure2>#img7 {
+        top: -0.6vw;
+        width: 10.9vw;
+    }
+    .marqueeStructure2>#img8 {
+        top: 0.1vw;
+        width: 6.5vw;
+    }
+    .marqueeStructure2>#img9 {
+        top: 0.3vw;
+        width: 14.5vw;
+    }
+    .detailsSection .centeredTextContainer {
+        height: 31vw;
+        width: 82vw;
+        left: 8.8vw;
+        gap: 1.5vw;
+    }
+    .centeredTextContainer .arrows {
+        padding: 0vw 3.6vw;
+    }
+    .arrows>#arrowLeft {
+        width: 2.4vw;
+    }
+    .arrows>#arrowRight {
+        width: 2.4vw;
+    }
+    .centeredTextContainer p{
+        font-size: 2vw;
+        line-height: 3vw;
+        letter-spacing: 0.1px;
+        width: 63vw;
+    }
+    .centeredTextContainer h4{
+        width: 64vw;
+        font-size: 2vw;
+        line-height: 3vw;
+        letter-spacing: 0.1px;
+    }
+
+    /* Page 6 */
+
+    .page6 .upperSection {
+        height: 70vw;
+    }
+    .upperSection .centerDetails {
+        top: -47vw;
+        padding: 1vw 6.4vw;
+    }
+    .centerDetails .rightDetails {
+        top: -4.8vw;
+    }
+    .upperSection>#partnerBg {
+        top: 10.5vw;
+        width: 52vw;
+    }
+    .centerDetails>#letsPartner {
+        width: 55vw;
+    }
+    .rightDetails ul {
+        font-size: 2vw;
+    }
+    .rightDetails>#getInTouch{
+        padding: 1.9vw 5vw;
+        white-space: nowrap;
+    }
+
+    /* Footer */
+
+    .page6 .footer{
+        height: auto;
+        padding: 3vw 9vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5vw;
+    }
+    .footer .leftSideContainer {
+        top: 3vw;
+        left: 3.5vw;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+    }
+    .leftSideContainer img {
+        width: 15vw;
+        margin-bottom: 2vw;
+    }
+    .leftSideContainer .details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2vw 6vw;
+    }
+    .details span {
+        white-space: nowrap;
+        font-size: 1.5vw;
+        letter-spacing: 1px;
+        margin: 0vw 0vw;
+        margin-right: 2vw;
+    }
+    .leftDetails img {
+        width: 15vw;
+    }
+    .leftDetails p {
+        font-size: 1.2vw;
+        width: 30vw;
+    }
+    .footer .rightSideContainer {
+        right: 2vw;
+        gap: 50.5vw;
+        margin-bottom: 3.5vw;
+    }
+    .rightSideContainer>img {
+        width: 7vw;
+    }
+}
