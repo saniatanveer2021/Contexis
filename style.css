@@ -345,7 +345,7 @@ span:hover::before{
     right: -40vw;
     background-image: url("pictures/img-wchange-01.jpg");
     background-size: 1020px;
-    background-position: 0px 47vw;    /*Change 0px for animation */
+    background-position: 0px 48.5vw;    /*Change 0px for animation */
 }
 .WrapperDiv .page4{                  /*Page 4's Code*/
     width: 100vw;
